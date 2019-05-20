@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".search"
+    android:background="@color/colorBackground"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="100dp"
+        android:text="معرفه معلومات الاطباء"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link"
+            android:layout_gravity="end"
+            android:background="@drawable/button"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+</LinearLayout>
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-75dp"
+        android:background="@drawable/doctors" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/search_w"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/search"
+            android:hint="           ابحث هنا            "
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="#555555"
+            android:textSize="24dp" />
+        <ImageButton
+            android:id="@+id/search_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+           android:background="@mipmap/search_shape"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+       >
+        <Spinner
+            android:id="@+id/spec"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="اختيار التخصص"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

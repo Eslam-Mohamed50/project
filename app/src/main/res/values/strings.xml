@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">projectV2</string>
+    <string-array name="arr">
+        <item>okokokok</item>
+        <item>okokokok</item>
+        <item>okokokok</item>
+    </string-array>
+    <string-array name="nums">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+   <string name="link">
+       <a href="https://www.vezeeta.com/ar">اضغط للحجز</a>
+   </string>
+    <string name="text_not_member">No account yet? </string>
+    <string name="create">Create one</string>
+    <string name="text_already_member">Already a member?  </string>
+    <string name="text_loog">login</string>
+</resources>
